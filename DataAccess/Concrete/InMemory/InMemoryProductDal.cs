@@ -56,7 +56,7 @@ namespace DataAccess.Concrete.InMemory
             Product productToUpdate = _products.SingleOrDefault(p => p.ProductId == product.ProductId);
             productToUpdate.ProductName = product.ProductName;
             productToUpdate.CategoryId = product.CategoryId;
-            productToUpdate.UnitPrice = product.UnitPrice;
+            productToUpdate.UnitPrice = product.UnitPrice; 
             productToUpdate.UnitsInStock = product.UnitsInStock;
         }
         public List<Product> GetAllByCategory(int categoryId)
